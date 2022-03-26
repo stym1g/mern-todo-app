@@ -35,6 +35,7 @@ function App() {
   };
 
   useEffect(() => {
+    console.log("Post no is ",process.env.PORT);
     axios.post("/api/users/getUsers", {}).then((response) => {
       if (response.data.success) {
         //console.log("response.data: ",response.data.doc);
