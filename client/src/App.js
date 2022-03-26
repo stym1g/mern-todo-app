@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import UserDetails from "./UserDetails/UserDetails";
 import CreateUser from "./CreateUser/CreateUser";
 import axios from "axios";
+axios.defaults.baseURL = "https://server-mern-todo-app-satyam.herokuapp.com";
 
 function App() {
   const [persons, setPersons] = useState([]);
